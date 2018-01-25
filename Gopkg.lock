@@ -104,10 +104,10 @@
   revision = "85424b54aeb661d802fad5c305f0e4406a89ade2"
 
 [[projects]]
+  branch = "master"
   name = "github.com/kataras/iris"
   packages = [".","cache","cache/cfg","cache/client","cache/client/rule","cache/entry","cache/ruleset","cache/uri","context","core/errors","core/handlerconv","core/host","core/maintenance","core/maintenance/client","core/maintenance/encoding","core/maintenance/version","core/memstore","core/netutil","core/router","core/router/macro","core/router/macro/interpreter/ast","core/router/macro/interpreter/lexer","core/router/macro/interpreter/parser","core/router/macro/interpreter/token","core/router/node","hero","hero/di","middleware/logger","middleware/recover","mvc","sessions","view"]
-  revision = "a388a9f814b60caeabe2937fe26c5655fad58f71"
-  version = "v10.0.0"
+  revision = "47108dc5a147a8b23de61bef86fe9327f0781396"
 
 [[projects]]
   branch = "master"
@@ -184,7 +184,8 @@
 [[projects]]
   name = "github.com/satori/go.uuid"
   packages = ["."]
-  revision = "5bf94b69c6b68ee1b541973bb8e1144db23a194b"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   branch = "master"
@@ -231,6 +232,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0a461091d8eea17778c34fce95fce75b003f0f37bddcda2051c1e1aebf9f711b"
+  inputs-digest = "e03f60060771caee8d9c5c34e8a1d069b6297bf02ca73c6591671ac075dd3d6e"
   solver-name = "gps-cdcl"
   solver-version = 1
