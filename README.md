@@ -1,5 +1,7 @@
 # Slait
 
+![Build Status](https://circleci.com/gh/alpacahq/slait/tree/master.png?cc5c36aee7500d7efdb23b2f8d182fbcc64995a0)
+
 Slait is a simple buffered message queue and delivers messages at least once.
 
 
