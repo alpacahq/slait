@@ -39,3 +39,4 @@ Slait requires Go 1.9+.
 `make all` will build the binary and install from `./cmd` directory to `$GOPATH/bin`.
 
 
+

@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9.2
+
+    working_directory: /go/src/github.com/alpacahq/slait
+    steps:
+      - checkout
+      - run: go get -u github.com/golang/dep/...
+      - run: make configure unittest

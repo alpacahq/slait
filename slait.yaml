@@ -1,0 +1,8 @@
+listen_port: 5994
+log_level: info
+data_dir: ""
+trim_config:
+  - topic: bars*
+    duration: 120h
+  - topic: quotes*
+    duration: 1h
