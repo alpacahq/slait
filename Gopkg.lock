@@ -89,7 +89,7 @@
   branch = "master"
   name = "github.com/json-iterator/go"
   packages = ["."]
-  revision = "358cfc39298cc7d6c9101444e19df5f6dc01f540"
+  revision = "bca911dae0735b8220ddb30236e11cff9d959f19"
 
 [[projects]]
   branch = "master"
@@ -104,10 +104,10 @@
   revision = "85424b54aeb661d802fad5c305f0e4406a89ade2"
 
 [[projects]]
-  branch = "master"
   name = "github.com/kataras/iris"
   packages = [".","cache","cache/cfg","cache/client","cache/client/rule","cache/entry","cache/ruleset","cache/uri","context","core/errors","core/handlerconv","core/host","core/maintenance","core/maintenance/client","core/maintenance/encoding","core/maintenance/version","core/memstore","core/netutil","core/router","core/router/macro","core/router/macro/interpreter/ast","core/router/macro/interpreter/lexer","core/router/macro/interpreter/parser","core/router/macro/interpreter/token","core/router/node","hero","hero/di","middleware/logger","middleware/recover","mvc","sessions","view"]
-  revision = "47108dc5a147a8b23de61bef86fe9327f0781396"
+  revision = "a388a9f814b60caeabe2937fe26c5655fad58f71"
+  version = "v10.0.0"
 
 [[projects]]
   branch = "master"
@@ -203,19 +203,19 @@
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["acme","acme/autocert"]
-  revision = "3d37316aaa6bd9929127ac9a527abf408178ea7b"
+  revision = "1875d0a70c90e57f11972aefd42276df65e895b9"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["html","html/atom"]
-  revision = "0ed95abb35c445290478a5348a7b38bb154135fd"
+  revision = "d19327ad09a0acfc17c9de97813e81b669bb1c4a"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "03467258950d845cd1877eab69461b98e8c09219"
+  revision = "8f27ce8a604014414f8dfffc25cbcde83a3f2216"
 
 [[projects]]
   branch = "v1"
@@ -232,6 +232,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "e03f60060771caee8d9c5c34e8a1d069b6297bf02ca73c6591671ac075dd3d6e"
+  inputs-digest = "0a461091d8eea17778c34fce95fce75b003f0f37bddcda2051c1e1aebf9f711b"
   solver-name = "gps-cdcl"
   solver-version = 1
