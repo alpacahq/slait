@@ -42,8 +42,8 @@
   name = "github.com/jasonlvhit/gocron"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/kataras/iris"
+  version = "10.0.0"
 
 [[constraint]]
   name = "github.com/pkg/errors"
