@@ -22,7 +22,12 @@
 [[projects]]
   branch = "master"
   name = "github.com/aymerick/raymond"
-  packages = [".","ast","lexer","parser"]
+  packages = [
+    ".",
+    "ast",
+    "lexer",
+    "parser"
+  ]
   revision = "72acac2207479d21dd45898c2a4264246c818148"
 
 [[projects]]
@@ -40,7 +45,10 @@
 [[projects]]
   branch = "master"
   name = "github.com/eknkc/amber"
-  packages = [".","parser"]
+  packages = [
+    ".",
+    "parser"
+  ]
   revision = "cdade1c073850f4ffc70a829e31235ea6892853b"
 
 [[projects]]
@@ -105,25 +113,68 @@
 
 [[projects]]
   name = "github.com/kataras/iris"
-  packages = [".","cache","cache/cfg","cache/client","cache/client/rule","cache/entry","cache/ruleset","cache/uri","context","core/errors","core/handlerconv","core/host","core/maintenance","core/maintenance/client","core/maintenance/encoding","core/maintenance/version","core/memstore","core/netutil","core/router","core/router/macro","core/router/macro/interpreter/ast","core/router/macro/interpreter/lexer","core/router/macro/interpreter/parser","core/router/macro/interpreter/token","core/router/node","hero","hero/di","middleware/logger","middleware/recover","mvc","sessions","view"]
+  packages = [
+    ".",
+    "cache",
+    "cache/cfg",
+    "cache/client",
+    "cache/client/rule",
+    "cache/entry",
+    "cache/ruleset",
+    "cache/uri",
+    "context",
+    "core/errors",
+    "core/handlerconv",
+    "core/host",
+    "core/maintenance",
+    "core/maintenance/client",
+    "core/maintenance/encoding",
+    "core/maintenance/version",
+    "core/memstore",
+    "core/netutil",
+    "core/router",
+    "core/router/macro",
+    "core/router/macro/interpreter/ast",
+    "core/router/macro/interpreter/lexer",
+    "core/router/macro/interpreter/parser",
+    "core/router/macro/interpreter/token",
+    "core/router/node",
+    "hero",
+    "hero/di",
+    "middleware/logger",
+    "middleware/recover",
+    "mvc",
+    "sessions",
+    "view"
+  ]
   revision = "a388a9f814b60caeabe2937fe26c5655fad58f71"
   version = "v10.0.0"
 
 [[projects]]
   branch = "master"
   name = "github.com/kataras/pio"
-  packages = [".","terminal"]
+  packages = [
+    ".",
+    "terminal"
+  ]
   revision = "825e39f34365e7db2c9fbc3692c16220e3bd7418"
 
 [[projects]]
   branch = "master"
   name = "github.com/kataras/survey"
-  packages = [".","core","terminal"]
+  packages = [
+    ".",
+    "core",
+    "terminal"
+  ]
   revision = "00934ae069eda15df26fa427ac393e67e239380c"
 
 [[projects]]
   name = "github.com/klauspost/compress"
-  packages = ["flate","gzip","zlib"]
+  packages = [
+    "flate",
+    "gzip"
+  ]
   revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
   version = "v1.2.1"
 
@@ -182,7 +233,6 @@
   revision = "abc90934186a77966e2beeac62ed966aac0561d5"
 
 [[projects]]
-  branch = "master"
   name = "github.com/satori/go.uuid"
   packages = ["."]
   revision = "5bf94b69c6b68ee1b541973bb8e1144db23a194b"
@@ -194,21 +244,21 @@
   revision = "86672fcb3f950f35f2e675df2240550f2a50762f"
 
 [[projects]]
-  name = "github.com/valyala/fasthttp"
-  packages = [".","fasthttputil"]
-  revision = "d42167fd04f636e20b005e9934159e95454233c7"
-  version = "v20160617"
-
-[[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert"]
+  packages = [
+    "acme",
+    "acme/autocert"
+  ]
   revision = "1875d0a70c90e57f11972aefd42276df65e895b9"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = ["html","html/atom"]
+  packages = [
+    "html",
+    "html/atom"
+  ]
   revision = "b417086c80e91bfa321ef761574721644b8b9f61"
 
 [[projects]]
@@ -232,6 +282,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0a461091d8eea17778c34fce95fce75b003f0f37bddcda2051c1e1aebf9f711b"
+  inputs-digest = "ed1a6009e43508bcd676ddd1e0380e464274b9195f9a255a1a38bf564fc52cf7"
   solver-name = "gps-cdcl"
   solver-version = 1
