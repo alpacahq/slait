@@ -85,6 +85,7 @@ func (sc *SlaitClient) request(method, url string, data []byte) ([]byte, error) 
 	if err != nil {
 		return nil, err
 	}
+	defer resp.Body.Close()
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
