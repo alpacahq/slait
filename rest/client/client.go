@@ -1,18 +1,18 @@
 package client
 
 import (
+	"bytes"
 	"encoding/json"
-	"errors"
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"time"
 
 	"github.com/alpacahq/slait/rest"
-	"github.com/valyala/fasthttp"
 )
 
 type SlaitClient struct {
-	client   *fasthttp.Client
+	client   *http.Client
 	Endpoint string
 }
 
@@ -73,26 +73,32 @@ func (sc *SlaitClient) GetPartition(topic, partition string, from, to *time.Time
 
 func (sc *SlaitClient) request(method, url string, data []byte) ([]byte, error) {
 	if sc.client == nil {
-		sc.client = &fasthttp.Client{}
+		sc.client = &http.Client{}
 	}
-	req := fasthttp.AcquireRequest()
-	req.SetRequestURI(url)
-	req.Header.SetMethod(method)
-	req.SetBody(data)
-	resp := fasthttp.AcquireResponse()
-	err := sc.client.Do(req, resp)
 
-	if resp.StatusCode() != http.StatusOK {
-		if err == nil {
-			err = errors.New(
-				fmt.Sprintf(
-					"Slait request failed - URL: %v - Code: %v - Response: %v",
-					url,
-					resp.StatusCode(),
-					resp.String(),
-				),
-			)
-		}
+	req, err := http.NewRequest(method, url, bytes.NewReader(data))
+	if err != nil {
+		return nil, err
 	}
-	return resp.Body(), err
+
+	resp, err := sc.client.Do(req)
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
+	}
+
+	if resp.StatusCode != http.StatusOK {
+		err = fmt.Errorf(
+			"Slait request failed - URL: %v - Code: %v - Response: %v",
+			url,
+			resp.StatusCode,
+			body,
+		)
+	}
+	return body, err
 }
