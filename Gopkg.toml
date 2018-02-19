@@ -50,10 +50,6 @@
   version = "0.8.0"
 
 [[constraint]]
-  name = "github.com/valyala/fasthttp"
-  version = "20160617.0.0"
-
-[[constraint]]
   branch = "v1"
   name = "gopkg.in/check.v1"
 

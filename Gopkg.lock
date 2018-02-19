@@ -53,7 +53,7 @@
   branch = "master"
   name = "github.com/flosch/pongo2"
   packages = ["."]
-  revision = "1f4be1efe3b3529b7e58861f75d70120a9567dc4"
+  revision = "97eac295f74b5fbb7fd3113e35f4ccf3c816e389"
 
 [[projects]]
   branch = "master"
@@ -86,10 +86,10 @@
   revision = "3c914c8681c3998f1dd463d84a4d8c29345e47a4"
 
 [[projects]]
-  branch = "master"
   name = "github.com/json-iterator/go"
   packages = ["."]
-  revision = "bca911dae0735b8220ddb30236e11cff9d959f19"
+  revision = "e7c7f3b33712573affdcc7a107218e7926b9a05b"
+  version = "1.0.6"
 
 [[projects]]
   branch = "master"
@@ -123,7 +123,7 @@
 
 [[projects]]
   name = "github.com/klauspost/compress"
-  packages = ["flate","gzip","zlib"]
+  packages = ["flate","gzip"]
   revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
   version = "v1.2.1"
 
@@ -182,10 +182,10 @@
   revision = "abc90934186a77966e2beeac62ed966aac0561d5"
 
 [[projects]]
-  branch = "master"
   name = "github.com/satori/go.uuid"
   packages = ["."]
-  revision = "5bf94b69c6b68ee1b541973bb8e1144db23a194b"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   branch = "master"
@@ -194,28 +194,22 @@
   revision = "86672fcb3f950f35f2e675df2240550f2a50762f"
 
 [[projects]]
-  name = "github.com/valyala/fasthttp"
-  packages = [".","fasthttputil"]
-  revision = "d42167fd04f636e20b005e9934159e95454233c7"
-  version = "v20160617"
-
-[[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
   packages = ["acme","acme/autocert"]
-  revision = "1875d0a70c90e57f11972aefd42276df65e895b9"
+  revision = "432090b8f568c018896cd8a0fb0345872bbac6ce"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["html","html/atom"]
-  revision = "b417086c80e91bfa321ef761574721644b8b9f61"
+  revision = "cbe0f9307d0156177f9dd5dc85da1a31abc5f2fb"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "8f27ce8a604014414f8dfffc25cbcde83a3f2216"
+  revision = "37707fdb30a5b38865cfb95e5aab41707daec7fd"
 
 [[projects]]
   branch = "v1"
@@ -232,6 +226,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0a461091d8eea17778c34fce95fce75b003f0f37bddcda2051c1e1aebf9f711b"
+  inputs-digest = "ed1a6009e43508bcd676ddd1e0380e464274b9195f9a255a1a38bf564fc52cf7"
   solver-name = "gps-cdcl"
   solver-version = 1
