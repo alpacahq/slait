@@ -12,7 +12,6 @@ import (
 )
 
 type SlaitClient struct {
-	client   *http.Client
 	Endpoint string
 }
 
@@ -72,26 +71,19 @@ func (sc *SlaitClient) GetPartition(topic, partition string, from, to *time.Time
 }
 
 func (sc *SlaitClient) request(method, url string, data []byte) ([]byte, error) {
-	if sc.client == nil {
-		sc.client = &http.Client{}
-	}
-
 	req, err := http.NewRequest(method, url, bytes.NewReader(data))
 	if err != nil {
 		return nil, err
 	}
-
-	resp, err := sc.client.Do(req)
+	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		return nil, err
 	}
 	defer resp.Body.Close()
-
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
 	}
-
 	if resp.StatusCode != http.StatusOK {
 		err = fmt.Errorf(
 			"Slait request failed - URL: %v - Code: %v - Response: %v",
