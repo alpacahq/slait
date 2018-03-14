@@ -22,7 +22,12 @@
 [[projects]]
   branch = "master"
   name = "github.com/aymerick/raymond"
-  packages = [".","ast","lexer","parser"]
+  packages = [
+    ".",
+    "ast",
+    "lexer",
+    "parser"
+  ]
   revision = "72acac2207479d21dd45898c2a4264246c818148"
 
 [[projects]]
@@ -40,7 +45,10 @@
 [[projects]]
   branch = "master"
   name = "github.com/eknkc/amber"
-  packages = [".","parser"]
+  packages = [
+    ".",
+    "parser"
+  ]
   revision = "cdade1c073850f4ffc70a829e31235ea6892853b"
 
 [[projects]]
@@ -83,13 +91,13 @@
   branch = "master"
   name = "github.com/jasonlvhit/gocron"
   packages = ["."]
-  revision = "3c914c8681c3998f1dd463d84a4d8c29345e47a4"
+  revision = "54194c9749d48b073c9aeb2c787b6882e95dd0cd"
 
 [[projects]]
+  branch = "master"
   name = "github.com/json-iterator/go"
   packages = ["."]
-  revision = "e7c7f3b33712573affdcc7a107218e7926b9a05b"
-  version = "1.0.6"
+  revision = "39acec93e05e5ba9d785d21d99608a7e4da16e3e"
 
 [[projects]]
   branch = "master"
@@ -101,29 +109,66 @@
   branch = "master"
   name = "github.com/kataras/golog"
   packages = ["."]
-  revision = "85424b54aeb661d802fad5c305f0e4406a89ade2"
+  revision = "dd676348ce75fa471fbbcd1bbbd131d00179756a"
 
 [[projects]]
   name = "github.com/kataras/iris"
-  packages = [".","cache","cache/cfg","cache/client","cache/client/rule","cache/entry","cache/ruleset","cache/uri","context","core/errors","core/handlerconv","core/host","core/maintenance","core/maintenance/client","core/maintenance/encoding","core/maintenance/version","core/memstore","core/netutil","core/router","core/router/macro","core/router/macro/interpreter/ast","core/router/macro/interpreter/lexer","core/router/macro/interpreter/parser","core/router/macro/interpreter/token","core/router/node","hero","hero/di","middleware/logger","middleware/recover","mvc","sessions","view"]
-  revision = "a388a9f814b60caeabe2937fe26c5655fad58f71"
-  version = "v10.0.0"
+  packages = [
+    ".",
+    "cache",
+    "cache/cfg",
+    "cache/client",
+    "cache/client/rule",
+    "cache/entry",
+    "cache/ruleset",
+    "cache/uri",
+    "context",
+    "core/errors",
+    "core/handlerconv",
+    "core/host",
+    "core/maintenance",
+    "core/maintenance/version",
+    "core/memstore",
+    "core/netutil",
+    "core/router",
+    "core/router/macro",
+    "core/router/macro/interpreter/ast",
+    "core/router/macro/interpreter/lexer",
+    "core/router/macro/interpreter/parser",
+    "core/router/macro/interpreter/token",
+    "core/router/node",
+    "middleware/logger",
+    "middleware/recover",
+    "view"
+  ]
+  revision = "0c841013385c284695f2336b672101168d748480"
+  version = "v10.3.0"
 
 [[projects]]
   branch = "master"
   name = "github.com/kataras/pio"
-  packages = [".","terminal"]
+  packages = [
+    ".",
+    "terminal"
+  ]
   revision = "825e39f34365e7db2c9fbc3692c16220e3bd7418"
 
 [[projects]]
   branch = "master"
   name = "github.com/kataras/survey"
-  packages = [".","core","terminal"]
+  packages = [
+    ".",
+    "core",
+    "terminal"
+  ]
   revision = "00934ae069eda15df26fa427ac393e67e239380c"
 
 [[projects]]
   name = "github.com/klauspost/compress"
-  packages = ["flate","gzip"]
+  packages = [
+    "flate",
+    "gzip"
+  ]
   revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
   version = "v1.2.1"
 
@@ -164,16 +209,22 @@
   revision = "542fd4642604d0d0c26112396ce5b1a9d01eee0b"
 
 [[projects]]
+  name = "github.com/modern-go/concurrent"
+  packages = ["."]
+  revision = "bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94"
+  version = "1.0.3"
+
+[[projects]]
+  name = "github.com/modern-go/reflect2"
+  packages = ["."]
+  revision = "1df9eeb2bb81f327b96228865c5687bc2194af3f"
+  version = "1.0.0"
+
+[[projects]]
   name = "github.com/pkg/errors"
   packages = ["."]
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
-
-[[projects]]
-  name = "github.com/russross/blackfriday"
-  packages = ["."]
-  revision = "cadec560ec52d93835bf2f15bd794700d3a2473b"
-  version = "v2.0.0"
 
 [[projects]]
   branch = "master"
@@ -196,20 +247,26 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert"]
-  revision = "432090b8f568c018896cd8a0fb0345872bbac6ce"
+  packages = [
+    "acme",
+    "acme/autocert"
+  ]
+  revision = "c4a91bd4f524f10d064139674cf55852e055ad01"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = ["html","html/atom"]
-  revision = "cbe0f9307d0156177f9dd5dc85da1a31abc5f2fb"
+  packages = [
+    "html",
+    "html/atom"
+  ]
+  revision = "892bf7b0c6e2f93b51166bf3882e50277fa5afc6"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "37707fdb30a5b38865cfb95e5aab41707daec7fd"
+  revision = "932fb2287bee613f2a65e71685c9d9c0020da979"
 
 [[projects]]
   branch = "v1"
@@ -219,13 +276,19 @@
 
 [[projects]]
   branch = "v2"
+  name = "gopkg.in/russross/blackfriday.v2"
+  packages = ["."]
+  revision = "cfdcce51965fe68951a5fa45454aa6278c3f9614"
+
+[[projects]]
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "d670f9405373e636a5a2765eea47fac0c9bc91a4"
+  revision = "7f97868eec74b32b0982dd158a51a446d1da7eb5"
+  version = "v2.1.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ed1a6009e43508bcd676ddd1e0380e464274b9195f9a255a1a38bf564fc52cf7"
+  inputs-digest = "795ff2d64394d8a7f2404049898efb6327f93d9864c2ea90c7848cc93be2107c"
   solver-name = "gps-cdcl"
   solver-version = 1
