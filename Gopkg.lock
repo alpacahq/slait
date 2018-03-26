@@ -28,7 +28,7 @@
     "lexer",
     "parser"
   ]
-  revision = "72acac2207479d21dd45898c2a4264246c818148"
+  revision = "b565731e1464263de0bda75f2e45d97b54b60110"
 
 [[projects]]
   name = "github.com/eapache/channels"
@@ -79,7 +79,7 @@
   branch = "master"
   name = "github.com/hashicorp/go-version"
   packages = ["."]
-  revision = "4fe82ae3040f80a03d04d2cccb5606a626b8e1ee"
+  revision = "23480c0665776210b5fbbac6eaaee40e3e6a96b7"
 
 [[projects]]
   branch = "master"
@@ -97,7 +97,7 @@
   branch = "master"
   name = "github.com/json-iterator/go"
   packages = ["."]
-  revision = "39acec93e05e5ba9d785d21d99608a7e4da16e3e"
+  revision = "4930b053b8e9419aa509532d159e153909fc495b"
 
 [[projects]]
   branch = "master"
@@ -109,7 +109,7 @@
   branch = "master"
   name = "github.com/kataras/golog"
   packages = ["."]
-  revision = "dd676348ce75fa471fbbcd1bbbd131d00179756a"
+  revision = "03be101463868edc5a81f094fc68a5f6c1b5503a"
 
 [[projects]]
   name = "github.com/kataras/iris"
@@ -141,8 +141,8 @@
     "middleware/recover",
     "view"
   ]
-  revision = "0c841013385c284695f2336b672101168d748480"
-  version = "v10.3.0"
+  revision = "41b17aca9ec493f6eedf17c0e5545cf134f2d445"
+  version = "v10.5.0"
 
 [[projects]]
   branch = "master"
@@ -154,14 +154,10 @@
   revision = "825e39f34365e7db2c9fbc3692c16220e3bd7418"
 
 [[projects]]
-  branch = "master"
   name = "github.com/kataras/survey"
-  packages = [
-    ".",
-    "core",
-    "terminal"
-  ]
-  revision = "00934ae069eda15df26fa427ac393e67e239380c"
+  packages = ["."]
+  revision = "18a4dbb1d9d05349aea1a2bf9c84028c36817c10"
+  version = "v1.3.4"
 
 [[projects]]
   name = "github.com/klauspost/compress"
@@ -251,7 +247,7 @@
     "acme",
     "acme/autocert"
   ]
-  revision = "c4a91bd4f524f10d064139674cf55852e055ad01"
+  revision = "88942b9c40a4c9d203b82b3731787b672d6e809b"
 
 [[projects]]
   branch = "master"
@@ -260,13 +256,22 @@
     "html",
     "html/atom"
   ]
-  revision = "892bf7b0c6e2f93b51166bf3882e50277fa5afc6"
+  revision = "6078986fec03a1dcc236c34816c71b0e05018fda"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "932fb2287bee613f2a65e71685c9d9c0020da979"
+  revision = "13d03a9a82fba647c21a0ef8fba44a795d0f0835"
+
+[[projects]]
+  name = "gopkg.in/AlecAivazis/survey.v1"
+  packages = [
+    "core",
+    "terminal"
+  ]
+  revision = "9d3458c219bae9653d267883634bdb5375281fd8"
+  version = "v1.5.1"
 
 [[projects]]
   branch = "v1"
@@ -278,17 +283,17 @@
   branch = "v2"
   name = "gopkg.in/russross/blackfriday.v2"
   packages = ["."]
-  revision = "cfdcce51965fe68951a5fa45454aa6278c3f9614"
+  revision = "c455fd41c6baf2f78fd7ff0aadc4e4b4d52698b0"
 
 [[projects]]
+  branch = "v2"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "7f97868eec74b32b0982dd158a51a446d1da7eb5"
-  version = "v2.1.1"
+  revision = "4fc5987536ef307a24ca299aee7ae301cde3d221"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "795ff2d64394d8a7f2404049898efb6327f93d9864c2ea90c7848cc93be2107c"
+  inputs-digest = "b772b23aa23713e241cc02c1075cca5b3fca5dce78b5a800dcdfc6b5120a818d"
   solver-name = "gps-cdcl"
   solver-version = 1
